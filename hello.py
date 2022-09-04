@@ -14,12 +14,12 @@ if (chechval % 2==0):
 else:
     print("odd")
     
-# Age form nested if
+# Age form nested if2
 
 age = int(input("Please input your age: "))
 if(age<18):
-    if(age<17):
-        print("You are minor")
+    print("You are minor")
+    if(age<17):        
         print("You are in school")
     else:
         print("you are in collage")
