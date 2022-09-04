@@ -1,6 +1,8 @@
 
 # Tutorial for control flows in Python
 
+z = 9
+
 a = 5
 b = 6
 print(a+b)
