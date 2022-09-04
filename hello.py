@@ -1,8 +1,5 @@
 
 # Tutorial for control flows in Python
-
-
-
 a = 5
 b = 6
 print(a+b)
