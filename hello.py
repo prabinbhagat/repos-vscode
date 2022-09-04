@@ -1,6 +1,5 @@
 
-# Tutorial for control flows in Python
-
+# Tutorial for control flows in Python My Notes and Codes
 
 a = 5
 b = 6
@@ -65,7 +64,7 @@ while(i>=11 and i<=20 ):
 
 
 
-# TUT 4 Operators, logical,equality,comparasion,arithmetic,Bitwise
+## TUT 4 Operators, logical,equality,comparasion,arithmetic,Bitwise
 
 #Logical Operator AND-OR-NOT
 True
@@ -81,9 +80,7 @@ print(x)
 
 x = not True
 print (x)
-
-
-#        
+        
 #   Equality Operators:
 #     Following operations are present in python for equlity check operation-
 
