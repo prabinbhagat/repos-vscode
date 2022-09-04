@@ -4,8 +4,8 @@ a = 5
 b = 6
 print(a+b)
 
-
 # if statement
+
 val = input("enter a Num ")
 chechval = int(val)
 if (chechval % 2==0):
