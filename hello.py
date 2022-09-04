@@ -1,9 +1,11 @@
 
 # Tutorial for control flows in Python My Notes and Codes
 
+'''
+#Adding two numbers
 a = 5
 b = 6
-print(a+b)
+print("The sum of {0} and {1} is".format(a,b) ,a+b)
 
 
 # if statement
@@ -22,7 +24,7 @@ if(age<18):
     print("You are minor")
     if(age<17):        
         print("You are in school")
-    else:
+    else:   
         print("you are in collage")
 
 elif(age>=18 and age <= 35):
@@ -100,4 +102,25 @@ if (c == b):
 else:
     print(c==b)
     
+age = int(input("Enter the age: "))
 
+if (age == 18):
+    print("You are eligible to vote..")
+
+'''
+
+name ="Prabin Bhagat"
+print(id(name))
+myName = "Prabin Bhagat"
+print(id(myName))
+
+a = name is myName
+print(a)                            # Both pointing to same memory Location will return true
+
+myList = ['a','b','c','d']
+myAnotherList = ['a','b','c','d']
+
+print(id(myList))
+print(id(myAnotherList))
+print(myList is myAnotherList)      # Collection are created in diffrent way though element are same they point to diff mem locatn
+print(myList == myAnotherList)      # Will return true as '==' compares value, whreas "is" checks same mem location
