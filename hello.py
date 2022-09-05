@@ -1,3 +1,5 @@
+from math import ceil, floor
+import math
 
 ## Tut 3 for control flows in Python My Notes and Codes
 
@@ -161,15 +163,15 @@ print("22 * 7 = ",22*7)
 print("22 / 7 = ",22/7)
 print("22 // 7 = ",22//7)
 print("22 % 7 = ",22%7)
-'''
+
 ### Tut 5 Pythom Math/Number Methods
 # Data scientist/data analytic like log normal distribution, finding exponent etc uses math/number methods
 
 #1. abs()
 #   abs(x) will return the absolute value of a number x which we pass in argument. The number x can be integer, float, complex,..
 
-from math import ceil, floor
-import math
+# from math import ceil, floor
+# import math
 
 print("Absolute value of 34.65: ",abs(34.65))
 print("Absolute value of 34.30: ",abs(34.30))
@@ -227,3 +229,93 @@ x = max("A","AA","AAA","B","BB","BBB","RAM","S")
 print("The max of is" ,x)
 
 #8. POW()
+# Power of
+a = pow(2,8)
+b = pow(-2,-8)
+x = pow(4, 3, 5)   # with modulus If a third parameter is present, it returns x to the power of y, modulus z.
+print("Five to the power of 2 is ",a ,b)
+print("x")
+
+#9. sqrt()
+a = math.sqrt(-9)
+b = math.sqrt(121)
+print(a)
+
+## Trignometric Functions
+
+a = math.sin(45)
+a = math.cos(90)
+a= math.tan(45)
+print(a)
+
+## Hypotenaos function 
+
+a = math.hypot(2,2)
+print(a)
+
+#10 modf()
+# This method returns the fractional and integer parts of x in a two-item tuple. 
+# Both the parts have the same sign as x. The integer part is returned as a float.
+a= math.modf(5)
+print("modf ",a)
+print ("math.modf(100.12) : ", math.modf(100.12))
+print ("math.modf(100.72) : ", math.modf(100.72))
+print ("math.modf(119) : ", math.modf(119))
+print ("math.modf(math.pi) : ", math.modf(math.pi))
+
+
+########## FOR LOOPS ###########
+
+#Print each concept in oops list list:
+oops = ["abstraction", "polymorphism", "inheritence","Encapsulation"]
+for x in oops:
+  print(x)
+
+#Looping Through a String
+#Even strings are iterable objects, they contain a sequence of characters:
+
+#Loop through the letters in the word "encapsulation":
+for x in "encapsulation":
+  print(x)
+
+# The range() Function
+# The range() function returns a sequence of numbers, starting from 0 by default, 
+# and increments by 1 (by default), and ends at a specified number.
+
+for x in range(6):
+  print(x)
+
+# Note that range(6) is not the values of 0 to 6, but the values 0 to 5.
+# The range() function defaults to 0 as a starting value, however it is possible to specify the starting value by adding a 
+# parameter: range(2, 6), which means values from 2 to 6 (but not including 6):
+
+for x in range(2, 6):
+  print(x)
+
+# The range() function defaults to increment the sequence by 1, however it is possible to specify the increment value by
+# adding a third parameter: range(2, 30, 3):
+
+################# FOR LOOP ENDS ##################
+
+
+#Program to check prime numbers in a range
+
+primeNumberCount = int(input("How many prime numbers would you like to see? "))
+
+for i in range(2,primeNumberCount):
+    if(i == 1 or i == 0):
+        continue
+    for j in range(2,primeNumberCount):
+        if(i%j == 0):
+            if(i != j):
+                break
+            else:
+                print(i)
+
+#Program to check max of 4 numbers
+'''
+lstUser = []
+for i in range (4): lstUser.append(int(input("Please input number:")))
+    # x =int(input("Please input number:"))
+    # lstUser.append(x)    
+print("The max number is :",max(lstUser))
