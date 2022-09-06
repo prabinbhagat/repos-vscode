@@ -1,5 +1,6 @@
 from math import ceil, floor
 import math
+from re import A
 
 ## Tut 3 for control flows in Python My Notes and Codes
 
@@ -313,9 +314,122 @@ for i in range(2,primeNumberCount):
                 print(i)
 
 #Program to check max of 4 numbers
-'''
+
 lstUser = []
 for i in range (4): lstUser.append(int(input("Please input number:")))
     # x =int(input("Please input number:"))
     # lstUser.append(x)    
 print("The max number is :",max(lstUser))
+
+
+## Tut 6 Data Structures List,Dictionary,Sets etc.
+
+
+# ******************************** 1.Lists ******************************
+
+
+# A list is a data structure in Python that is a mutable, or changeable, ordered sequence of elements. 
+# Each element or value that is inside of a list is called an item. Just as strings are defined as characters
+# between quotes, lists are defined by having values between square brackets [ ]
+
+# mutable vs immutable eg:
+
+fName = "Prabin"
+print(fName)
+
+fName = "Bhagat"
+print(fName)
+
+x = fName[0]  # Get first element of string
+print(x)
+
+# Suppose I want to change firt item of Bhagat from B to V
+
+#fName[0] = "V"         # this will result in error:'str' object does not support item assignment
+
+# What I can infer is that you cannot change items/element of string OBJECT after its assignment so, we can say that
+#   STRINGS ARE IMMUTABLE
+
+# IN context to above list is mutable
+## Lists
+# List can be heterogeneous,Homogeneous
+
+oopConcept = ["Abs","Poly","InHeri","Encap"]
+print(oopConcept)
+
+print(oopConcept[2])
+
+oopConcept[2] = "Inheritance"   #Here we are changing element of the list
+print(oopConcept[2],oopConcept)
+
+myList = ["Ram","Rahi",'X','Y','Z',"123.25",123,"3.14",50,5+2,math.tan(45)]
+print(myList,type(myList))
+
+myOtherLst = list((1,2,3,4,'I',"love","list"))
+print(len(myOtherLst))
+
+for i in range(len(myOtherLst)-1):
+    print(i)
+    if(myOtherLst[i] == "I"):
+        myOtherLst[i] = "We"
+
+        print(myOtherLst)
+'''
+otherList = [1,2,3,4,5,6]
+print(max(otherList))
+        
+# Append is use to insert object to the end of the list
+
+otherList.append("Prabin")
+print(otherList)
+otherList.append(["Rabin","Bhagat"])                       # This is nesting of list adding list into list
+print(otherList)
+#output: [1, 2, 3, 4, 5, 6, 'Prabin', ['Rabin', 'Bhagat']]
+
+print(otherList[7])
+
+# What if you wanted to acces the first element of nested list i.e., Rabin
+print(otherList[7][0])
+
+# I want to acces a range of element from a specific position
+# we will use indexing technique with :  (index:last index) Note:last element i (n-1)
+# printing all element from 3rd index
+print("Indexing technique: ",otherList[3:])
+
+print("Indexing technique: ",otherList[3:6])  # it will not go to 6 index it will gotill 5 index in list or in collection or range last element i n-1
+print(otherList)
+
+# Now unlike append i want to insert element at a specific index we use insert method
+otherList.insert(2,"World")  # insert at index 2
+print(otherList)
+
+#Suppose i want to add two elemnts at once without creating nested list the key is Extend method
+
+lst = [1,2,3,4,5,6,7,8]
+lst.append([9,10])     # creates nested lst
+lst.extend([9,10])     # extends lst by adding elemnts seperateley 
+print(lst)
+
+# Operation performed on list
+#1 sum() - will add all the element
+lst = [1,2,3,4,5,6,7,8]
+a = sum(lst)
+print(a)
+
+print(lst*5) # it will append lst five times but if you want to divide each element with 5 use for loop
+
+for i in lst:
+    print(i*5)
+
+#2 pop() will remove last element if index not specified and update the list 
+lst.pop()
+print(lst)
+lst.pop(4)
+print(lst)
+
+#3 count() will calcualte total occurance of given element in list
+
+print(lst.count(1))
+
+# ******************************** 1.Lists Ends******************************
+
