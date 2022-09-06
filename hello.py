@@ -1,10 +1,9 @@
 from math import ceil, floor
 import math
-from re import A
 
 ## Tut 3 for control flows in Python My Notes and Codes
 
-'''
+''''''
 #Adding two numbers
 a = 5
 b = 6
@@ -238,9 +237,9 @@ print("Five to the power of 2 is ",a ,b)
 print("x")
 
 #9. sqrt()
-a = math.sqrt(-9)
+#a = math.sqrt(-9)
 b = math.sqrt(121)
-print(a)
+print(b)
 
 ## Trignometric Functions
 
@@ -374,7 +373,7 @@ for i in range(len(myOtherLst)-1):
         myOtherLst[i] = "We"
 
         print(myOtherLst)
-'''
+
 otherList = [1,2,3,4,5,6]
 print(max(otherList))
         
