@@ -37,7 +37,7 @@ else:
     print("Senior citizen")
 
 
-# Loop statements:
+# Loop statements :
 # for loop, while loop
 
 # finding sum of all numbers
