@@ -71,5 +71,30 @@ def AddEvenOdd(list):
 
 print(AddEvenOdd([1,2,3,4,5,6,7,8,9,10]))
 
-## Positionl and Keyword argument
+## Positionl and Keyword argument:
 
+def Hello(name,age):  
+    print("Hello "+ name + " You are "+str(age) + " Years old.")
+
+Hello("Prabin",32) #when we define a parameter and we call a function we specifically give value than it is Postitional argument
+
+def HelloAgain(name,age = 32):  # it is keyword argument as we define default value, just like optional param in vb.net
+    print("Hello "+ name + " You are "+str(age) + " Years old.")
+
+HelloAgain("Robin")   
+HelloAgain("Robin",36)  # Here we converted keyword args to positional args.
+
+
+def hello(*args,**kwargs):   # *args = positinal  **kwargs = keyword, we can use anything instead of args,kwargs.
+    print("args: ",args)
+    print("kwargs: ",kwargs)
+
+hello("Prabin","Bhagat",age = 31,Dob = 2000)
+
+# now lets take the output of above which is tuple and dict and store it in lst and dict
+
+lst = list(('Prabin', 'Bhagat'))
+dic = {'age': 31, 'Dob': 2000}
+hello(lst,dic)  # it will consider both lst and dic as postional argument(coz key value pair is missing) which is a problem,how will we seperate them as position and keyword?????
+# ans : it is simple just use * and **
+hello(*lst,**dic)
