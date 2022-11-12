@@ -40,7 +40,37 @@ class car:
     def EngineType(self):                       # Method of the class
         print("This car has {} engine".format(self.engine))
 
-mycar = car(4,4,"Electric")                                           # whenvever we initilize an object first thing called is constructor.
+mycar = car(4,4,"Electric")                            # whenvever we initilize an object first thing called is constructor.
 print(mycar.engine)
 print("The total number of windows in my car is {}".format(mycar.windows))
 mycar.EngineType()
+
+
+#Can we have multiple consturctors in PYTHON????
+    #Yes, we do can have multiple constructors in .net,c#. Multipe constructors should have different parameters.
+
+class Animal:
+    def __init__(self,name,speceis) -> None:
+        self.name = name
+        self.speceis = speceis
+    
+    def __init__(self,name,speceis,sound) -> None:
+        self.name = name
+        self.speceis = speceis
+        self.sound = sound
+
+    def MakeSound(self):
+        print("This animal {} makes a sound of {}".format(self.name,self.sound))
+
+
+
+cat = Animal("Kitty","Mammals")  # this results in run time error saying TypeError: Animal.__init__() missing 1 required positional argument: 'sound'
+# What i can see is that the most latest constructor overrides the previous constuctor....!!!!!!
+
+dog = Animal("Tommy","Mammals","Woof Wooof")
+print(dog)
+print(dog.name)
+dog.MakeSound()
+
+#------------------------- Lets Create Multiple Constructor in PYTHON ------------------------------
+
