@@ -64,7 +64,7 @@ class Animal:
 
 
 
-cat = Animal("Kitty","Mammals")  # this results in run time error saying TypeError: Animal.__init__() missing 1 required positional argument: 'sound'
+#cat = Animal("Kitty","Mammals")  # this results in run time error saying TypeError: Animal.__init__() missing 1 required positional argument: 'sound'
 # What i can see is that the most latest constructor overrides the previous constuctor....!!!!!!
 
 dog = Animal("Tommy","Mammals","Woof Wooof")
@@ -74,3 +74,24 @@ dog.MakeSound()
 
 #------------------------- Lets Create Multiple Constructor in PYTHON ------------------------------
 
+class Animals:
+    def __init__(self,*args):               #can also do it with **kwargs
+        if len(args) == 1:
+            self.name = args[0]
+        elif len(args) == 2:
+            self.name = args[0]
+            self.speces = args[1]
+        elif len(args) ==3:
+            self.name = args[0]
+            self.speces = args[1]
+            self.age = args[2]
+
+    def GetAge(self):
+        return print("The age of {} is {}".format(self.name,self.age))
+    
+lion = Animals("Babbar","Mammals",45)
+childLion = Animals("Small Babbar","mammals")
+lion.GetAge()
+print(childLion.name)
+
+#-------------------------------------------------------------------------------------------------------
