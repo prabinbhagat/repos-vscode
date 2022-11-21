@@ -370,30 +370,30 @@ PassengerId,Survived,Pclass,Name,Sex,Age,SibSp,Parch,Ticket,Fare,Cabin,Embarked
 1260,1,1,"Gibson, Mrs. Leonard (Pauline C Boeson)",female,45,0,1,112378,59.4,,C
 1261,0,2,"Pallas y Castello, Mr. Emilio",male,29,0,0,SC/PARIS 2147,13.8583,,C
 1262,0,2,"Giles, Mr. Edgar",male,21,1,0,28133,11.5,,S
-1263,1,1,"Wilson, Miss. Helen Alice",female,31,0,0,16966,134.5,E39 E41,C
+1263,0,1,"Wilson, Miss. Helen Alice",female,31,0,0,16966,134.5,E39 E41,C
 1264,0,1,"Ismay, Mr. Joseph Bruce",male,49,0,0,112058,0,B52 B54 B56,S
 1265,0,2,"Harbeck, Mr. William H",male,44,0,0,248746,13,,S
 1266,1,1,"Dodge, Mrs. Washington (Ruth Vidaver)",female,54,1,1,33638,81.8583,A34,S
-1267,1,1,"Bowen, Miss. Grace Scott",female,45,0,0,PC 17608,262.375,,C
-1268,1,3,"Kink, Miss. Maria",female,22,2,0,315152,8.6625,,S
+1267,0,1,"Bowen, Miss. Grace Scott",female,45,0,0,PC 17608,262.375,,C
+1268,0,3,"Kink, Miss. Maria",female,22,2,0,315152,8.6625,,S
 1269,0,2,"Cotterill, Mr. Henry Harry""""",male,21,0,0,29107,11.5,,S
 1270,0,1,"Hipkins, Mr. William Edward",male,55,0,0,680,50,C39,S
 1271,0,3,"Asplund, Master. Carl Edgar",male,5,4,2,347077,31.3875,,S
 1272,0,3,"O'Connor, Mr. Patrick",male,,0,0,366713,7.75,,Q
 1273,0,3,"Foley, Mr. Joseph",male,26,0,0,330910,7.8792,,Q
-1274,1,3,"Risien, Mrs. Samuel (Emma)",female,,0,0,364498,14.5,,S
+1274,0,3,"Risien, Mrs. Samuel (Emma)",female,,0,0,364498,14.5,,S
 1275,1,3,"McNamee, Mrs. Neal (Eileen O'Leary)",female,19,1,0,376566,16.1,,S
 1276,0,2,"Wheeler, Mr. Edwin Frederick""""",male,,0,0,SC/PARIS 2159,12.875,,S
-1277,1,2,"Herman, Miss. Kate",female,24,1,2,220845,65,,S
-1278,0,3,"Aronsson, Mr. Ernst Axel Algot",male,24,0,0,349911,7.775,,S
+1277,0,2,"Herman, Miss. Kate",female,24,1,2,220845,65,,S
+1278,1,3,"Aronsson, Mr. Ernst Axel Algot",male,24,0,0,349911,7.775,,S
 1279,0,2,"Ashby, Mr. John",male,57,0,0,244346,13,,S
-1280,0,3,"Canavan, Mr. Patrick",male,21,0,0,364858,7.75,,Q
-1281,0,3,"Palsson, Master. Paul Folke",male,6,3,1,349909,21.075,,S
-1282,0,1,"Payne, Mr. Vivian Ponsonby",male,23,0,0,12749,93.5,B24,S
-1283,1,1,"Lines, Mrs. Ernest H (Elizabeth Lindsey James)",female,51,0,1,PC 17592,39.4,D28,S
-1284,0,3,"Abbott, Master. Eugene Joseph",male,13,0,2,C.A. 2673,20.25,,S
-1285,0,2,"Gilbert, Mr. William",male,47,0,0,C.A. 30769,10.5,,S
-1286,0,3,"Kink-Heilmann, Mr. Anton",male,29,3,1,315153,22.025,,S
+1280,1,3,"Canavan, Mr. Patrick",male,21,0,0,364858,7.75,,Q
+1281,1,3,"Palsson, Master. Paul Folke",male,6,3,1,349909,21.075,,S
+1282,1,1,"Payne, Mr. Vivian Ponsonby",male,23,0,0,12749,93.5,B24,S
+1283,0,1,"Lines, Mrs. Ernest H (Elizabeth Lindsey James)",female,51,0,1,PC 17592,39.4,D28,S
+1284,1,3,"Abbott, Master. Eugene Joseph",male,13,0,2,C.A. 2673,20.25,,S
+1285,1,2,"Gilbert, Mr. William",male,47,0,0,C.A. 30769,10.5,,S
+1286,1,3,"Kink-Heilmann, Mr. Anton",male,29,3,1,315153,22.025,,S
 1287,1,1,"Smith, Mrs. Lucien Philip (Mary Eloise Hughes)",female,18,1,0,13695,60,C31,S
 1288,0,3,"Colbert, Mr. Patrick",male,24,0,0,371109,7.25,,Q
 1289,1,1,"Frolicher-Stehli, Mrs. Maxmillian (Margaretha Emerentia Stehli)",female,48,1,1,13567,79.2,B41,C
@@ -412,8 +412,8 @@ PassengerId,Survived,Pclass,Name,Sex,Age,SibSp,Parch,Ticket,Fare,Cabin,Embarked
 1302,1,3,"Naughton, Miss. Hannah",female,,0,0,365237,7.75,,Q
 1303,1,1,"Minahan, Mrs. William Edward (Lillian E Thorpe)",female,37,1,0,19928,90,C78,Q
 1304,1,3,"Henriksson, Miss. Jenny Lovisa",female,28,0,0,347086,7.775,,S
-1305,0,3,"Spector, Mr. Woolf",male,,0,0,A.5. 3236,8.05,,S
+1305,1,3,"Spector, Mr. Woolf",male,,0,0,A.5. 3236,8.05,,S
 1306,1,1,"Oliva y Ocana, Dona. Fermina",female,39,0,0,PC 17758,108.9,C105,C
 1307,0,3,"Saether, Mr. Simon Sivertsen",male,38.5,0,0,SOTON/O.Q. 3101262,7.25,,S
 1308,0,3,"Ware, Mr. Frederick",male,,0,0,359309,8.05,,S
-1309,0,3,"Peter, Master. Michael J",male,,1,1,2668,22.3583,,C
+1309,1,3,"Peter, Master. Michael J",male,,1,1,2668,22.3583,,C
