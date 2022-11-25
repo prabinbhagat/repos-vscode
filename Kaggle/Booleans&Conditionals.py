@@ -86,4 +86,75 @@ def Inspect(x):
 
 Inspect(-8)
 
+# Note especially the use of colons (:) and whitespace to denote separate blocks of code. This is similar to what happens when we
+#  define a function - the function header ends with :, and the following line is indented with 4 spaces. All subsequent 
+#  indented lines belong to the body of the function, until we encounter an unindented line, ending the function definition.
+
+def f(x):
+    if x > 0:
+        print("Only printed when x is positive; x =", x)
+        print("Also only printed when x is positive; x =", x)
+    print("Always printed, regardless of x's value; x =", x)
+
+f(1)
+f(0)
+
+# Boolean conversion
+# We've seen int(), which turns things into ints, and float(), which turns things into floats, so you might not be surprised to 
+# hear that Python has a bool() function which turns things into bools.
+
+print(bool(1)) # all numbers are treated as true, except 0
+print(bool(0))
+print(bool("asf")) # all strings are treated as true, except the empty string ""
+print(bool(""))
+# Generally empty sequences (strings, lists, and other types we've yet to see like lists and tuples)
+# are "falsey" and the rest are "truthy"
+
+# We can use non-boolean objects in if conditions and other places where a boolean would be expected. Python will implicitly
+#  treat them as their corresponding boolean value:
+
+if 0:
+    print(0)
+elif "spam":
+    print("spam")       # this output spam as if statement looks for trueness of the condition 
+
+#----------------------------------------------------------------------------------
+# Many programming languages have sign available as a built-in function. Python doesn't, but we can define our own!
+
+# Define a function called sign which takes a numerical argument and returns -1 if it's negative, 
+# 1 if it's positive, and 0 if it's 0.
+
+def sign(x):
+    if x<0:
+        return -1
+    elif x>0:
+        return 1
+    elif x ==0:
+        return 0
+
+# using a conditional expression:
+
+totalCandy = 9
+print("candy" if totalCandy ==1 else "Candies")
+
+totalCandy = 1
+print("candy" if totalCandy ==1 else "Candies")
+
+# The function is_negative below is implemented correctly - it returns True if the given number is negative and False otherwise.
+
+# However, it's more verbose than it needs to be. We can actually reduce the number of lines of code in this 
+# function by 75% while keeping the same behaviour.
+
+# def is_negative(number):
+#     if number < 0:
+#         return True
+#     else:
+#         return False
+
+# Above code can be rewritten as
+
+def is_negative(number):
+    return number < 0
+
+print(is_negative(89))
 
